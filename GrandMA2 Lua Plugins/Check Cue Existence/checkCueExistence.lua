@@ -2,7 +2,7 @@ function doesExist(objectName)
     -- Get the handle of the specified object
     local handle = gma.show.getobj.handle(objectName)
 
-    -- Check if the object exists (the handle is a value other than nil) and return true, otherwise return false
+    -- Check if the object exists and return true, otherwise return false
     if handle ~= nil then
         return true
     else
