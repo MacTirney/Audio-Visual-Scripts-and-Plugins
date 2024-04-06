@@ -1,4 +1,3 @@
--- Function to create cues for 10 fixtures
 function createCues()
     -- Number of fixtures
     local numFixtures = 10
@@ -12,7 +11,7 @@ function createCues()
 
             for fixtureNumber = 1, numFixtures do
                 -- Replace fixtureNumber with your fixture ID(s)
-                local fixtureID = 1000 + fixtureNumber
+                local fixtureID = 300 + fixtureNumber
                 local intensity = math.random(0, 100)
                 local red = math.random(0, 255)
                 local green = math.random(0, 255)
@@ -68,6 +67,8 @@ end
 function main()
     createCues()
     runRandomCues()
+    
+    gma.feedback('Plugin execution completed.')
 end
 
 return main
